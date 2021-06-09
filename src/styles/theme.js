@@ -5,6 +5,7 @@ export const theme = {
     white: '#ffffff',
     darkBg: '#0A1128',
     mainBg: '#0A1128',
+    mediumGray: '#DDDDDD',
   },
   fonts: {
     family: {
@@ -12,7 +13,7 @@ export const theme = {
       secondary: "'Montserrat', sans-serif",
     },
     sizes: {
-      xsmall: '8rem',
+      xsmall: '0.8rem',
       small: '1.6rem',
       medium: '2.4rem',
       large: '3.2rem',
@@ -23,7 +24,16 @@ export const theme = {
     },
   },
   media: {
-    lteMedium: '(max-width: 758px)',
+    medium: '(max-width: 758px)',
   },
-  spacings: {},
+  spacings: {
+    xsmall: '0.7rem',
+    small: '1.6rem',
+    medium: '2.4rem',
+    large: '3.2rem',
+    xlarge: '4.0rem',
+    xxlarge: '4.8rem',
+    huge: '5.6rem',
+    xhuge: '6.2rem',
+  },
 };
