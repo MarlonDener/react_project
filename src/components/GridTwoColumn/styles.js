@@ -8,7 +8,7 @@ export const Container = styled.div`
     grid-template-columns: 2fr 2fr;
     align-items: center;
     gap: ${theme.spacings.large};
-    padding: 10px 50px;
+    padding: 90px 50px;
     width: 100%;
     background: ${theme.colors.primaryColor};
     @media ${theme.media.medium} {
