@@ -8,18 +8,44 @@ export const GlobalStyles = createGlobalStyle`
 }
 html {
     font-size:62.5%;
-
+    scroll-behavior: smooth;
 }
+
+html::-webkit-scrollbar{
+    width:10px;
+}
+
+html::-webkit-scrollbar-track{
+    background: #e3e3e3;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #dc143c;
+}
+
 
 body{
     font-family: 'Open Sans', sans-serif;
     font-size:1.6rem;
+    overflow-x: hidden;
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Montserrat', sans-serif;
     }
 
 p{
-    margin: ${({ theme }) => theme.spacings.small} 0;
+    font-size: 19px;
+    margin: 10px 0;
+}
+strong{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    display: block;
+}
+@media (max-width: 700px) {
+    strong{ font-size: 37px;}
+    p{font-size:17px,
+      width: 100%,
+    };
 }
 `;

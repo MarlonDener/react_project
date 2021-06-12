@@ -1,23 +1,27 @@
+/* eslint-disable react/prop-types */
 import P from 'prop-types';
 import * as Styled from './styles';
 import { TextComponent } from '../TextComponent';
 import { Heading } from '../Heading';
 import contents from './Asset';
 
-export const GridTwoColumn = () => {
+export const GridTwoColumn = ({ title, text, imgSrc, id, sectionId }) => {
   return (
-    <Styled.Container>
+    <Styled.Container id={sectionId}>
       <Styled.TextContainer>
         <Heading uppercase>
-          <h3 name="titulo">{contents.title}</h3>
+          <strong>{title}</strong>
         </Heading>
-        <TextComponent>{contents.text}</TextComponent>
+        <TextComponent>{text}</TextComponent>
       </Styled.TextContainer>
       <Styled.ImageContainer>
-        <img src={contents.imagem} alt={contents.title} />
+        <img src={imgSrc} alt={contents.title} />
       </Styled.ImageContainer>
     </Styled.Container>
   );
 };
-
-//<img src={contents.imagem} alt={contents.title} />
+GridTwoColumn.propTypes = {
+  title: P.string,
+  text: P.string,
+  imgSrc: P.string,
+};

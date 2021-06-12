@@ -11,9 +11,11 @@ export const Container = styled.div`
     z-index: 5;
     width: 100%;
     background: ${theme.colors.white};
-    border-bottom: 1px solid #626262;
+    box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.2);
     transition: all 300ms ease-in-out;
-
+    position: fixed;
+    top: 0;
+    left: 0;
     ${SectionContainer} {
       padding-top: 3px;
       padding-bottom: 3px;
@@ -67,15 +69,15 @@ export const Button = styled.button`
     position: fixed;
     top: 2rem;
     right: 2rem;
-    width: 4rem;
-    heigth: 4rem;
+    width: 5rem;
+    height: 5rem;
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
     border: none;
     cursor: pointer;
     display: none;
     transition: 0.2s all ease-in-out;
-
+    border: thin solid rgba(255, 255, 255, 0.4);
     &:hover {
       filter: brightness(1.8);
     }

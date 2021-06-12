@@ -21,7 +21,7 @@ describe('<MenuLink />', () => {
         text-decoration: none;
         font-size: 1.6rem;
         padding: 1.6rem;
-        color: #0A1128;
+        color: #000926;
         position: relative;
       }
 
@@ -45,7 +45,6 @@ describe('<MenuLink />', () => {
       <a
         class="c0"
         href="https://localhost"
-        target="_self"
       >
         Children
       </a>

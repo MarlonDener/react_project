@@ -1,6 +1,6 @@
 export default [
   {
-    children: 'Link 1',
+    children: 'Início',
     link: '#target1',
     newTab: false,
   },

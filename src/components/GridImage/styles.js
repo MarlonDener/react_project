@@ -4,37 +4,39 @@ import { Container as TextComponent } from '../TextComponent/styles';
 import { Container as SectionContainer } from '../SectionContainer/styles';
 export const GlobalContainer = styled.div`
   ${({ theme }) => css`
-    color: #fff;
+    color: ${theme.colors.primaryColor};
     ${SectionContainer} {
-      background: ${theme.colors.primaryColor};
+      background: ${theme.colors.white};
     }
   `}
 `;
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.primaryColor};
+    background: ${theme.colors.white};
     margin: 0 auto;
-    > ${TextComponent} {
-      margin: ${theme.spacings.medium} 10px;
+    ${TextComponent} {
+      margin-bottom: 10px;
+      color: ${theme.colors.primaryColor};
       text-align: center;
     }
     > h1 {
       font-size: 25px;
       text-align: center;
-      text-transform: uppercase;
-    }
-    > p {
-      text-align: center;
-      margin: 0 auto;
+      color: ${theme.colors.primaryColor};
     }
     @media (max-width: 800px) {
       > h1 {
-        font-size: 21px;
+        font-size: 27px;
       }
       > p {
         font-size: 19px;
       }
+    }
+    > p {
+      font-size: 21px;
+      text-align: center;
+      margin: 0 auto;
     }
   `}
 `;
@@ -45,8 +47,9 @@ export const Grid = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: ${theme.spacings.large};
-
+    color: ${theme.colors.primaryColor};
     @media (max-width: 800px) {
       flex-direction: column;
     }
@@ -55,25 +58,23 @@ export const Grid = styled.div`
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
-    width: 320px;
-    ${HeadingContainer} {
-      position: relative;
-      left: 5rem;
-    }
-    ${HeadingContainer}::before {
-      counter-increment: grid-counter;
-      content: counter(grid-counter);
-      position: absolute;
-      font-size: 7rem;
-      bottom: 0.1rem;
-      left: -3rem;
-      transform: rotate(8deg);
-      @media (max-width: 800px) {
-        font-size: 5.8rem;
-      }
-    }
+    overflow: hidden;
     @media (max-width: 800px) {
-      width: 92%;
+      width: 100%;
+    }
+  `}
+`;
+export const Image = styled.img`
+  ${({ theme }) => css`
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s ease-in;
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+    &:hover {
+      transform: scale(1.2) rotate(10deg);
     }
   `}
 `;

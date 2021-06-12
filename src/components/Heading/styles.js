@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 const titleSize = {
   small: (theme) => css`
     font-size: ${theme.fonts.sizes.medium};
+    padding: 15px 4px;
   `,
   medium: (theme) => css`
     font-size: ${theme.fonts.sizes.large};
@@ -31,6 +32,9 @@ export const Title = styled.div`
     color: ${colorDark ? theme.colors.white : theme.colors.primaryColor};
     ${titleSize[size](theme)}
     ${titleCase(uppercase)}
-    padding: 40px 30px 0px 30px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-right: 8px;
   `}
 `;

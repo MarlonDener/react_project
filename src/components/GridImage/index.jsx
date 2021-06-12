@@ -1,23 +1,21 @@
 import P from 'prop-types';
 import * as Styled from './styles';
+import { SectionContainer } from '../SectionContainer';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
-import { SectionContainer } from '../SectionContainer';
-
-export const GridText = (children) => {
+export const GridImage = (children) => {
   return (
-    <Styled.GlobalContainer id={children.sectionId}>
+    <Styled.GlobalContainer id="gallery">
       <SectionContainer>
         <Styled.Container>
-          <Heading>
+          <Heading uppercase>
             <strong>{children.title}</strong>
-            _____________________
           </Heading>
+          <TextComponent>{children.description}</TextComponent>
           <Styled.Grid>
             {children.grid.map((el) => (
-              <Styled.GridElement key={el.title}>
-                <Heading size="small">{el.title}</Heading>
-                <TextComponent>{el.description}</TextComponent>
+              <Styled.GridElement key={el.altText}>
+                <Styled.Image src={el.srcImg} alt={el.altText} />
               </Styled.GridElement>
             ))}
           </Styled.Grid>
@@ -26,6 +24,6 @@ export const GridText = (children) => {
     </Styled.GlobalContainer>
   );
 };
-GridText.protoTypes = {
-  children: P.string,
+GridImage.protoTypes = {
+  children: P.node.isRequired,
 };
