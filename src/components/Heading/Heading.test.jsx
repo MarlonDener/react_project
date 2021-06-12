@@ -9,18 +9,18 @@ describe('<Heading />', () => {
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
-      color: theme.colors.primaryColor,
+      color: theme.colors.white,
       'font-size': theme.fonts.sizes.large,
       'text-transform': 'none',
     });
   });
 
-  it('should render with white color', () => {
+  it('should render with primaryColor color', () => {
     renderTheme(<Heading colorDark={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
-      color: theme.colors.white,
+      color: theme.colors.primaryColor,
     });
   });
 
@@ -56,26 +56,18 @@ describe('<Heading />', () => {
       'font-size': theme.fonts.sizes.xhuge,
     });
   });
-  it('should render with white color', () => {
+  it('should render with primaryColor color', () => {
     renderTheme(<Heading colorDark={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
-      color: theme.colors.white,
+      color: theme.colors.primaryColor,
     });
   });
 
   it('should render correct font-size when using mobile', () => {
     const { rerender } = renderTheme(<Heading size="huge">texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
-
-    expect(screen.getByRole('heading', { name: 'texto' })).toHaveStyleRule(
-      'font-size',
-      theme.fonts.sizes.large,
-      {
-        media: theme.media.lteMedium,
-      },
-    );
   });
   it('should render with uppercase letters', () => {
     renderTheme(<Heading uppercase={true}>texto</Heading>);
