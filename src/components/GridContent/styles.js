@@ -13,8 +13,8 @@ export const Container = styled.div`
        font-size: ${theme.fonts.sizes.xlarge}};
       }
       @media (max-width: 800px) {
-       font-size: ${theme.fonts.sizes.small};
-       padding: 7px 40px;
+       font-size: 15px;
+       padding: 7px 10px;
        };
       }
       ${ContainerText} {
@@ -22,6 +22,9 @@ export const Container = styled.div`
           color: ${theme.colors.primaryColor};
           max-width: 80rem;
           padding-bottom: 40px;
+          @media (max-width: 800px) {
+              padding: 10px 20px;
+          }
       }
 
     }
