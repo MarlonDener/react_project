@@ -1,7 +1,6 @@
 import * as Styled from './styles';
 import P from 'prop-types';
 
-// eslint-disable-next-line prettier/prettier
 export const Heading = ({ children, colorDark = true, as = 'h1', size = 'medium', uppercase = false }) => {
   return (
     <Styled.Title
