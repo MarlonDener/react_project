@@ -7,7 +7,7 @@
     
 <h3>Acessar aplicação:</h3> https://page-dev-md.herokuapp.com/
     
-<h4>Painel de controle da API</h4>
+<h3>Painel de controle da API</h3>
     
 ![image](https://user-images.githubusercontent.com/70349830/121931519-19c33780-cd1a-11eb-873b-c43668ca0877.png)
 
