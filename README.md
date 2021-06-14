@@ -1,4 +1,4 @@
-<h2>Page React</h2>
+<h2>Aplicação React</h2>
 
 <p>Essa aplicação React.js desenvolvida utilizando Styled Components, Storybook, eslint, Testes de componentes, Cloudinary para o armazenamento de imagem, e consumindo dados de uma api própria desenvolvida com Strapi que estar no ar, onde assim facilita a alteração das informações da página de forma dinâmica (textos, imagens, titulos).
  <br>
