@@ -6,6 +6,7 @@
 <h3>Api desenvolvida:</h3> https://strapi-landing-pages-project-1.herokuapp.com/pages?slug=dev-md</h4>
     
 <h3>Acessar aplicação:</h3> https://page-dev-md.herokuapp.com/
+<br>
     
 <h3>Painel de controle da API</h3>
     
