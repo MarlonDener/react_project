@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 html {
     font-size:62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar{
@@ -43,7 +44,7 @@ strong{
     display: block;
 }
 @media (max-width: 700px) {
-    strong{ font-size: 37px;}
+    strong{ font-size: 30px;}
     p{font-size:17px,
       width: 100%,
     };

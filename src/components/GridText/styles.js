@@ -6,14 +6,14 @@ export const GlobalContainer = styled.div`
   ${({ theme }) => css`
     color: #fff;
     ${SectionContainer} {
-      background: ${theme.colors.primaryColor};
+      background-image: url('/assets/main-bg.svg');
+      background-size: cover;
     }
   `}
 `;
 
 export const Container = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.primaryColor};
     margin: 0 auto;
     > ${TextComponent} {
       margin: ${theme.spacings.medium} 10px;
@@ -26,6 +26,7 @@ export const Container = styled.div`
     }
     > p {
       text-align: center;
+      font-weight: bold;
       margin: 0 auto;
     }
     @media (max-width: 800px) {

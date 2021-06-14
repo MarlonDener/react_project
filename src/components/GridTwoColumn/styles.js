@@ -24,10 +24,8 @@ export const ImageContainer = styled.div`
   ${({ theme }) => css`
     > img {
       width: 100%;
-      @media ${theme.media.medium} {
-        img {
-          width: 100%;
-        }
+      @media (max-width: 700px) {
+        width: 88%;
       }
     }
   `}

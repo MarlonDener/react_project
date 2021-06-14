@@ -86,8 +86,14 @@ export const Button = styled.button`
       width: 3rem;
       height: 3.5rem;
     }
-    @media (max-width: 789px) {
+    @media (max-width: 900px) {
       display: block;
+    }
+    @media (max-width: 500px) {
+      top: 2rem;
+      right: 1rem;
+      width: 4rem;
+      height: 4rem;
     }
   `}
 `;

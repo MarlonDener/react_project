@@ -14,5 +14,11 @@ export const Container = styled.a`
     opacity: 0.6;
     z-index: 6;
     color: ${theme.colors.primaryColor};
+    @media (max-width: 500px) {
+      width: 3rem;
+      height: 3rem;
+      bottom: 2rem;
+      right: 1rem;
+    }
   `}
 `;
