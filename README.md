@@ -3,9 +3,9 @@
 <p>Essa aplicação React.js desenvolvida utilizando Styled Components, Storybook, eslint, Testes de componentes, Cloudinary para o armazenamento de imagem, e consumindo dados de uma api própria desenvolvida com Strapi que estar no ar, onde assim facilita a alteração das informações da página de forma dinâmica (textos, imagens, titulos).
  <br>
     
-<h4>Api desenvolvida:</h4> https://strapi-landing-pages-project-1.herokuapp.com/pages?slug=dev-md</h4>
+<h3>Api desenvolvida:</h3> https://strapi-landing-pages-project-1.herokuapp.com/pages?slug=dev-md</h4>
     
-<h3>Acessar aplicação:</h4> https://page-dev-md.herokuapp.com/
+<h3>Acessar aplicação:</h3> https://page-dev-md.herokuapp.com/
     
 <h4>Painel de controle da API</h4>
     
