@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Title } from '../Heading/styles';
+import { Title, titleCase } from '../Heading/styles';
 
 export const Container = styled.div`
   ${({ theme, background }) => css`
@@ -13,10 +13,23 @@ export const Container = styled.div`
     background: ${theme.colors.primaryColor};
     @media ${theme.media.medium} {
       grid-template-columns: 1fr;
-      padding: 0px 0px;
+      padding: 25px 0px;
     }
     ${Title} {
       margin-bottom: ${theme.spacings.xsmall};
+      @media (max-width: 800px) {
+        padding-bottom:3px;
+        padding-top: 8px;
+        padding-right: 3px;
+        padding-left: 3px;
+      }
+    }
+    ${titleCase} {
+        @media (max-width: 800px) {
+      strong {
+          font-size: 26px;
+      }
+  }
     }
   `}
 `;
@@ -31,5 +44,7 @@ export const ImageContainer = styled.div`
   `}
 `;
 export const TextContainer = styled.div`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    padding: 0px 19px;
+  `}
 `;

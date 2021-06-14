@@ -23,7 +23,7 @@ const mediaFont = (theme) => css`
   }
 `;
 
-const titleCase = (uppercase) => css`
+export const titleCase = (uppercase) => css`
   text-transform: ${uppercase ? 'uppercase' : 'none'};
 `;
 

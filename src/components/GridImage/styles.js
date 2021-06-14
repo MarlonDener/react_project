@@ -66,7 +66,7 @@ export const GridElement = styled.div`
 `;
 export const Image = styled.img`
   ${({ theme }) => css`
-    width: 300px;
+    width: 340px;
     height: 250px;
     object-fit: cover;
     transition: 0.3s ease-in;
