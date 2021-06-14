@@ -4,6 +4,7 @@ import { GridTwoColumn } from '../../components/GridTwoColumn';
 import { GridContent } from '../../components/GridContent';
 import { GridText } from '../../components/GridText';
 import { GridImage } from '../../components/GridImage';
+import { Form } from '../../components/Form';
 import { Footer } from '../../components/Footer';
 import { GoTop } from '../../components/GoTop';
 import { useEffect, useState } from 'react';
@@ -92,6 +93,7 @@ export const Home = () => {
           }
         })}
         <GoTop />
+        <Form />
         <Footer />
       </Styled.Wrapper>
     </div>
