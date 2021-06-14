@@ -20,8 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "postinstall": "cd plugins/wysiwyg && npm i"
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -62,10 +61,5 @@
     "eslint-plugin-prettier": "^3.3.1",
     "jest-styled-components": "^7.0.4",
     "prettier": "2.3.0"
-  },
-  "engines": {
-      "node": ">=14.x.x",
-       "npm": ">=6.0.0"
-  },
-  "license": "MIT"
+  }
 }
