@@ -16,5 +16,5 @@ Link para acessar: https://page-dev-md.herokuapp.com/
 
 ![image](https://user-images.githubusercontent.com/70349830/121931954-a8d04f80-cd1a-11eb-9b62-798fb0df00b2.png)
     
-Muito obrigado por estar aqui !
+<p>Enfim, agradeço por estar aqui, me coloco a disposição para contatos</p>
   
