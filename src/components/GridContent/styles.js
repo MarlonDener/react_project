@@ -13,7 +13,9 @@ export const Container = styled.div`
        font-size: ${theme.fonts.sizes.xlarge}};
       }
       @media (max-width: 800px) {
-       font-size: ${theme.fonts.sizes.small}};
+       font-size: ${theme.fonts.sizes.small};
+       padding: 7px 40px;
+       };
       }
       ${ContainerText} {
           margin: 0 auto;
